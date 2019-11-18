@@ -1,0 +1,26 @@
+.canvas-area
+{
+  //min-width: 1200px;
+  //min-height: 800px;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 1px;
+}
+
+.canvas-body
+{
+  width: 1123px;
+  height: 794px;
+  background-color: rgba( 0, 0, 0, 0.1);
+  margin: 20px auto auto auto;
+}
+
+.canvas-toolbox
+{
+  width: 200px;
+  height: 850px;
+  border: 1px solid black;
+  background-color: rgba( 0, 0, 0, 0.6);
+  display: inline-block;
+}
+

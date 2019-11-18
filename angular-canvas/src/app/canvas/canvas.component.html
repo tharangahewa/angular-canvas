@@ -1,0 +1,18 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <h2>Canvas</h2>
+    </div>
+  </div>
+  <div class="row no-gutters">
+    <div class="col-1 canvas-toolbox">
+    </div>
+    <div class="col-11 canvas-area">
+      <div #myBounds class="canvas-body">
+        <app-generic-object
+          [bounds]="myBounds">
+        </app-generic-object>
+      </div>
+    </div>
+  </div>
+</div>

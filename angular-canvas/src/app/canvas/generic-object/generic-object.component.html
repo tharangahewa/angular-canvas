@@ -1,0 +1,10 @@
+<div
+  ngDraggable
+  class= "object"
+  [bounds]="bounds"
+  [inBounds]="true"
+  (started)="onStart($event)"
+  (stopped)="onStop($event)"
+  (endOffset)="onMoveEnd($event)">
+  <p>Drag Me</p>
+</div>
