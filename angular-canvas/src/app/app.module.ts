@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CanvasComponent } from './canvas/canvas.component';
 import { AngularDraggableModule } from "angular2-draggable";
 import { GenericObjectComponent } from './canvas/generic-object/generic-object.component';
+import { NgxPrintModule } from "ngx-print";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GenericObjectComponent } from './canvas/generic-object/generic-object.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularDraggableModule
+    AngularDraggableModule,
+    NgxPrintModule
   ],
   providers: [],
   bootstrap: [AppComponent]
