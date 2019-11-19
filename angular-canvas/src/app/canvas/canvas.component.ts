@@ -10,7 +10,8 @@ export class CanvasComponent implements OnInit {
   scale: number = 1;
   styles: any;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
