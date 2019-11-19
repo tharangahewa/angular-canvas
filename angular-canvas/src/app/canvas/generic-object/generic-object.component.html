@@ -1,10 +1,29 @@
 <div
   ngDraggable
+  ngResizable
   class= "object"
   [bounds]="bounds"
   [inBounds]="true"
   (started)="onStart($event)"
   (stopped)="onStop($event)"
-  (endOffset)="onMoveEnd($event)">
+  (endOffset)="onMoveEnd($event)"
+  [trackPosition]="true"
+  [position]="position"
+
+  [rzContainment]="bounds"
+  [rzAspectRatio]="false"
+  [rzMinWidth]="10"
+  [rzMinHeight]="10"
+  [rzHandles]="'n,e,s,w,se,sw,ne,nw'"
+
+  (rzStart)="onRzStart( $event)"
+  (rzStop)="onRzStop($event)"
+
+  [zIndex]="order+1"
+  [zIndexMoving]="99"
+
+
+  [ngStyle]="styles"
+>
   <p>Drag Me</p>
 </div>

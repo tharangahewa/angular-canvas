@@ -22,8 +22,11 @@
            [ngStyle]="styles"
            class="canvas-body d-print-block" >
         <app-generic-object
-          [bounds]="myBounds">
+          *ngFor="let idx of [1,2,3]"
+          [bounds]="myBounds"
+          [order]="idx" >
         </app-generic-object>
+
       </div>
     </div>
   </div>
